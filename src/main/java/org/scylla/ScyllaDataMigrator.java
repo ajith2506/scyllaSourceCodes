@@ -67,6 +67,7 @@ public class ScyllaDataMigrator {
 
         Table sourceTable = sourceDynamoDB.getTable(sourceTableName);
         Table targetTable = targetDynamoDB.getTable(targetTableName);
+        logger.info("Migrating data to table: {}", targetTableName);
 
         ScanSpec scanSpec = new ScanSpec();
         Iterator<Item> items = sourceTable.scan(scanSpec).iterator();

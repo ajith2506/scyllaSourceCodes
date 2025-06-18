@@ -88,6 +88,7 @@ public class ScyllaDeleteTool {
         List<Map<String, AttributeValue>> itemsToDelete = scanResponse.items();
 
         int totalItems = itemsToDelete.size();
+        log.info("Deleting {} items from table: {}", totalItems, tableName);
         int deletedCount = 0;
 
         List<KeySchemaElement> keySchema = client.describeTable(DescribeTableRequest.builder()

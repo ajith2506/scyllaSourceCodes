@@ -1,0 +1,8 @@
+scylla:
+  sourceEndpoint: "SOURCE_SCYLLA_ENDPOINT"
+  targetEndpoint: "TARGET_SCYLLA_ENDPOINT"
+  region: "AWS_REGION"
+
+tables:
+  source: "SOURCE_TABLE_NAME"
+  destination: "TARGET_TABLE_NAME"

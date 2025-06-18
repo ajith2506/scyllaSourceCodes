@@ -1,0 +1,15 @@
+dynamo:
+  accessKey: "YOUR_AWS_ACCESS_KEY"
+  secretKey: "YOUR_AWS_SECRET_KEY"
+  region: "AWS_REGION"
+  endpoint: https://dynamodb.ap-south-1.amazonaws.com
+
+scylla:
+  endpoint: "TARGET_SCYLLA_ENDPOINT"
+
+tables:
+  - sourceTableName: "SOURCE_TABLE_NAME"
+    targetTableName: "TARGET_TABLE_NAME"
+
+
+
